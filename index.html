@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport"
+         content="width=device-width, initial-scale=1, user-scalable=yes">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&display=swap" rel="stylesheet">
+      <title>Water Years in Beads</title>
+    </head>
+    <body>
+        <div id="text-content" class="text-column">
+            <h1>Plaster Creek Daily Mean Streamflow</h1>
+            <h3>“Water Years” 2017–2019<br/>Measured at USGS site 04119055, under 28th Street</h3>
+        </div>
+        <div class="chart-container">
+              <img src="assets/WaterYears_TEST.png">
+        </div>
+        <div id="text-content" class="text-column">
+          <p>During the pandemic months, I’ve turned to tactile crafts, learning to knit with my arms as needles and printing with cyanotype chemicals. I looked into those iron-together, mosaic beads meant for kids. Given a grid and physical pixels in ordered spectrums of colors, I thought it’d be natural to render some data.</p>
+          <p>This is a sort of companion piece to the <a href="https://cotterjk.github.io/plaster-creek/">hourly streamflow visualizer</a>—low-tech vs. high, manual depiction vs. automated, and a three-year daily history vs. hourly updates.</p>
+          <h2>Data Proces</h2>
+          <p>In addition to hourly measurements, the <a href"https://waterdata.usgs.gov/nwis/uv/?site_no=04119055">USGS Plaster Creek site</a> calculates an average discharge for each day, and puts those in a table to summarize each water year. (A “water year” begins each October to account for early snowfall that doesn’t melt until spring.)</p>
+        </div>
+        <div class="process-image-container">
+            <h6>//screenshot</h6>
+        </div>
+        <div id="text-content" class="text-column">
+            <p>I scraped these into a Google Sheet and used conditional formatting to shade each cell blue by value.</p>
+        </div>
+        <div class="process-image-container">
+            <h6>//google sheet</h6>
+        </div>
+        <div id="text-content" class="text-column">
+            <p>This is really the heatmap I was after, but I need another step to help me make it a physical object. I took a screenshot, and in Photoshop, used the posterize effect to quantize or “round” the continuous color scale up or down to five shades of blue available in <a href="https://www.perler.com/perler-storefront-catalog/products/tropical-bead-tray_80-17549--perler-beads/">Perler’s “Tropical” bead tray line: Robin's Egg, Mist, Lagoon, Teal, and Midnight</a>! This became my key as I lay beads. It probably took three soothing hours total.</p>
+            <h2>Note on units</h2>
+            <p>I actually skipped a step above: in the spreadsheet, I first converted each measurement to its value <em>log<sub>2</sub></em>. I created this heatmap actually using that value instead, so that color variation communicates a truer seasonal arc.</p>
+
+            <p>The streamflow gauge is capable of answering the question: every second, how many cubes of water, a foot in each dimension, are fully displaced from their position here? When streamflow increases basically at all, the answer to this question surges exponentially. The USGS site uses a logarithmic scale by default for this ft<sup>3</sup>/sec unit. So I straightened out that curve, rescaling the high variation in large readings to the low variation in small readings. The scale in the bottom corner makes this plain.</p>
+
+            <p>(I log’d the discharge reading on my <a href="https://cotterjk.github.io/plaster-creek/">hourly update page</a> as well, calculating the height of the blue wave. Little fluctuations on dry days then have as much visible range as big flood fluctuations do.)</p>
+
+            <p>(The USGS station started collecting water height in April 2020. This unit increases more linearly with rainfall and probably my subjective sensation of streamflow, though it doesn’t capture speed.)</p>
+
+            <p>Anyway, this is all to say: logarithmic scales can be really hard to make sense of, and can require some reinterpretation, which sometimes feels like data manipulation. Numbers feel so objective; attaching a unit to them grounds them in the real world, though still abstractly enough to require interpretation. I think this communication is a main concern of data visualization practice.</p>
+        </div>
+
+      <div class="logo-container">
+          <a href="https://cotterkoopman.com/">
+              <!-- <img src="assets/ck_logo.svg"> -->
+              <svg class="logo" mlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 520 520">
+                <defs>
+                  <style>
+                    .cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:24px;}.cls-2{stroke-dasharray:0 81.6;}
+                  </style>
+                </defs>
+                <title>
+                  ck_logo
+                </title>
+                <line class="cls-1" x1="472" y1="382.4" x2="472" y2="382.4"/>
+                <line class="cls-2" x1="472" y1="300.8" x2="472" y2="178.4"/>
+                <line class="cls-1" x1="472" y1="137.6" x2="472" y2="137.6"/>
+                <line class="cls-2" x1="401.3" y1="96.8" x2="295.3" y2="35.6"/>
+                <line class="cls-1" x1="260" y1="15.2" x2="260" y2="15.2"/>
+                <line class="cls-2" x1="189.3" y1="56" x2="83.3" y2="117.2"/>
+                <line class="cls-1" x1="48" y1="137.6" x2="48" y2="137.6"/>
+                <line class="cls-2" x1="48" y1="219.2" x2="48" y2="341.6"/>
+                <line class="cls-1" x1="48" y1="382.4" x2="48" y2="382.4"/>
+                <line class="cls-2" x1="118.6" y1="423.2" x2="224.6" y2="484.4"/>
+                <line class="cls-1" x1="260" y1="504.8" x2="260" y2="504.8"/>
+                <line class="cls-2" x1="330.6" y1="464" x2="436.6" y2="402.8"/>
+                <line class="cls-1" x1="260" y1="15.2" x2="260" y2="504.8"/>
+                <line class="cls-1" x1="472" y1="137.6" x2="260" y2="260"/>
+                <line class="cls-1" x1="472" y1="382.4" x2="260" y2="260"/>
+                <polyline class="cls-1" points="260 137.6 154 198.8 154 321.2 260 382.4"/>
+              </svg>
+          </a>
+      </div>
+    </body>
+</html>

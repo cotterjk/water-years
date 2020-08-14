@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+    background: antiquewhite;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.chart-container {
+    width: 60%;
+    margin: auto;
+    max-width: 700px;
+}
+img {
+  width:100%;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight:300;
+    color: #aaa;
+    padding-top: 0.7em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 19px;
+    color: #222;
+    line-height: 1.4;
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #296251;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #13436A;
+}
+
+.text-column {
+    max-width: 600px;
+    width: 66%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.logo-container {
+    display: block;
+    width: 70px;
+    margin: 64px auto;
+}
+
+.doodle-container {
+    width: 60%;
+    margin: 30px auto 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding:20px;
+        margin-top: 0px;
+    }
+  .text-column {
+      width: 100%;
+      margin: auto;
+  }
+  .chart-container {
+      width: 100%;
+      margin: auto;
+  }
+  .logo-container {
+      margin-bottom: 64px;
+  }
+  .doodle-container {
+      width: 100%;
+  }
+}
+
+.down-arrow-container {
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    transform: translate(-20px, 0);
+    height: 40px;
+    width: 40px;
+}
+
+svg.logo {
+    stroke: #13436A;
+}
+
+svg.logo:hover {
+    stroke: #296251;
+}
+
+.svg-chart-container {
+    max-width: 700px;
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+}
