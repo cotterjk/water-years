@@ -11,28 +11,28 @@
     <body>
         <div id="text-content" class="text-column">
             <h1>Plaster Creek Daily Mean Streamflow</h1>
-            <h3>“Water Years” 2017–2019<br/>Measured at USGS site 04119055, under 28th Street</h3>
         </div>
         <div class="chart-container">
               <img src="assets/WaterYears_TEST.png">
         </div>
         <div id="text-content" class="text-column">
-          <p>During the pandemic months, I’ve turned to tactile crafts, learning to knit with my arms as needles and printing with cyanotype chemicals. I looked into those iron-together, mosaic beads meant for kids. Given a grid and physical pixels in ordered spectrums of colors, I thought it’d be natural to render some data.</p>
-          <p>This is a sort of companion piece to the <a href="https://cotterjk.github.io/plaster-creek/">hourly streamflow visualizer</a>—low-tech vs. high, manual depiction vs. automated, and a three-year daily history vs. hourly updates.</p>
-          <h2>Data Proces</h2>
-          <p>In addition to hourly measurements, the <a href"https://waterdata.usgs.gov/nwis/uv/?site_no=04119055">USGS Plaster Creek site</a> calculates an average discharge for each day, and puts those in a table to summarize each water year. (A “water year” begins each October to account for early snowfall that doesn’t melt until spring.)</p>
-        </div>
-        <div class="process-image-container">
-            <h6>//screenshot</h6>
-        </div>
-        <div id="text-content" class="text-column">
+            <h6>“Water Years” 2017–2019. Measured at USGS site 04119055, under 28th Street</h6>
+            <p>During the pandemic months, I’ve turned to tactile crafts, learning to knit with my arms as needles and printing with cyanotype chemicals. I looked into those iron-together, mosaic beads meant for kids. Given a grid and physical pixels in ordered spectrums of colors, I thought it’d be natural to render some data.</p>
+            <p>This is a sort of companion piece to the <a href="https://cotterjk.github.io/plaster-creek/">hourly streamflow visualizer</a>—low-tech vs. high, manual depiction vs. automated, and a three-year daily history vs. hourly updates.</p>
+            <h2>Data Process</h2>
+            <p>In addition to hourly measurements, the <a href"https://waterdata.usgs.gov/nwis/uv/?site_no=04119055">USGS Plaster Creek site</a> calculates an average discharge for each day, and puts those in a table to summarize each water year. (A “water year” begins each October to account for early snowfall that doesn’t melt until spring.)</p>
+            <div class="process-image-container">
+                <img src="assets/numbers_shot.png">
+            </div>
             <p>I scraped these into a Google Sheet and used conditional formatting to shade each cell blue by value.</p>
-        </div>
-        <div class="process-image-container">
-            <h6>//google sheet</h6>
-        </div>
-        <div id="text-content" class="text-column">
-            <p>This is really the heatmap I was after, but I need another step to help me make it a physical object. I took a screenshot, and in Photoshop, used the posterize effect to quantize or “round” the continuous color scale up or down to five shades of blue available in <a href="https://www.perler.com/perler-storefront-catalog/products/tropical-bead-tray_80-17549--perler-beads/">Perler’s “Tropical” bead tray line: Robin's Egg, Mist, Lagoon, Teal, and Midnight</a>! This became my key as I lay beads. It probably took three soothing hours total.</p>
+            <div class="process-image-container">
+                <img src="assets/sheets_shot.png">
+            </div>
+            <p>This is really the heatmap I was after, but I need another step to help me make it a physical object. I took a screenshot, and in Photoshop, used the posterize effect to quantize or “round” the continuous color scale up or down to five shades of blue available in <a href="https://www.perler.com/perler-storefront-catalog/products/tropical-bead-tray_80-17549--perler-beads/">Perler’s “Tropical” bead tray line: Robin's Egg, Mist, Lagoon, Teal, and Midnight</a>!</p>
+            <div class="process-image-container">
+                <img src="assets/key_shot.jpg">
+            </div>
+            <p>This became my key as I lay beads. It probably took three soothing hours total.</p>
             <h2>Note on units</h2>
             <p>I actually skipped a step above: in the spreadsheet, I first converted each measurement to its value <em>log<sub>2</sub></em>. I created this heatmap actually using that value instead, so that color variation communicates a truer seasonal arc.</p>
 

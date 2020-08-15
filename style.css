@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background: antiquewhite;
+    background: white;
     margin: 0;
 }
 
@@ -12,37 +12,52 @@ body {
 .chart-container {
     width: 60%;
     margin: auto;
-    max-width: 700px;
+    max-width: 40rem;
 }
 img {
   width:100%;
 }
 
+h1, h2, h6, p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #172027;
+    line-height: 1.65;
+}
+
 h1 {
     font-size: 34px;
-    font-weight:300;
-    color: #aaa;
+    font-weight:600;
     padding-top: 0.7em;
-    font-family: 'Source Sans Pro', sans-serif;
+    color: #398b93;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 3rem 0 0 0;
+    color: #48ADB8;
 }
 
 p {
-    font-size: 19px;
-    color: #222;
-    line-height: 1.4;
-    margin-top: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+h6 {
+    font-size: 14px;
+    margin: 0;
+    font-style: italic;
 }
 
 a {
   text-decoration: none;
-  color: #296251;
+  color: #388993;
   cursor: pointer;
 }
 
 a:hover {
-  color: #13436A;
+  opacity: 0.6;
 }
 
 .text-column {
@@ -59,8 +74,7 @@ a:hover {
     margin: 64px auto;
 }
 
-.doodle-container {
-    width: 60%;
+.process-image-container {
     margin: 30px auto 0;
 }
 
@@ -95,11 +109,11 @@ a:hover {
 }
 
 svg.logo {
-    stroke: #13436A;
+    stroke: #388993;
 }
 
 svg.logo:hover {
-    stroke: #296251;
+    stroke: #BDE0E6;
 }
 
 .svg-chart-container {
