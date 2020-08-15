@@ -36,7 +36,9 @@ h2 {
     font-size: 32px;
     font-weight: 600;
     margin: 3rem 0 0 0;
-    color: #48ADB8;
+    padding-top:3px;
+    color: #37868F;
+    border-top: 1.5px #37868F solid;
 }
 
 p {
@@ -56,7 +58,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #388993;
+  color: #37868F;
   cursor: pointer;
 }
 
@@ -113,7 +115,7 @@ a:hover {
 }
 
 svg.logo {
-    stroke: #388993;
+    stroke: #37868F;
 }
 
 svg.logo:hover {
