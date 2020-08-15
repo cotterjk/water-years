@@ -30,6 +30,7 @@ h1 {
     font-weight:600;
     padding-top: 0.7em;
     color: #398b93;
+    line-height: 1;
 }
 
 h2 {
@@ -54,6 +55,7 @@ h6 {
     font-size: 14px;
     margin: 0;
     font-style: italic;
+    line-height: 1;
 }
 
 a {
